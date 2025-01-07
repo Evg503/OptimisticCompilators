@@ -1,0 +1,5 @@
+gcc hello.c --verbose -save-temps
+./a.out
+cp hello.c hello-rv.c
+riscv64-linux-gnu-gcc hello-rv.c --verbose -save-temps -static -o a-rv.out
+./a-rv.out
